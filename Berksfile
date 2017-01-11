@@ -1,3 +1,8 @@
-source 'https://supermarket.chef.io'
+site :opscode
+
+cookbook 'nginx'
+cookbook 'runit'
+cookbook 'supervisor'
+cookbook 'python'
 
 metadata
