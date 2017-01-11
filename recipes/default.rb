@@ -2,7 +2,6 @@
 # Cookbook Name:: flugel_devpiserver
 # Recipe:: default
 #
-# Copyright (c) 2017 Flugel.it, All Rights Reserved.
 
 include_recipe 'python'
 
@@ -17,7 +16,7 @@ server_path = "/home/#{devpi_user}/.devpi/server"
 user devpi_user do
     home "/home/#{devpi_user}"
     password '$1$Q1zEFQ8c$BPLEZ2TRKgey0pvcQi38l/'
-    shell '/bin/false'
+    shell '/bin/bash'
 end
 
 group devpi_group do
@@ -52,13 +51,3 @@ execute 'initialize-devpiserver' do
     user devpi_user
     not_if { File.exist?(server_path) }
 end
-
-#supervisor_service 'devpi_server' do
-#    action :stop
-#end
-
-#execute 'reindex-devpiserver' do
-#    command "#{devpicmd} --recreate-search-index --serverdir #{server_path}"
-#    user devpi_user
-#end
-

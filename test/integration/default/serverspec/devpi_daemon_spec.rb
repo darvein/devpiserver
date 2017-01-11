@@ -1,3 +1,8 @@
+#
+# Cookbook Name:: flugel_devpiserver
+# Recipe:: supervisor
+#
+
 require 'serverspec'
 
 set :backend, :exec
