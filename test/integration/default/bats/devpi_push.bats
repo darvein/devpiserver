@@ -1,7 +1,7 @@
 #!/usr/bin/env bats
 
 VENV=/home/testuser/env
-DEVPI_SERVER="http://localhost:3141"
+DEVPI_SERVER="http://localhost:8080"
 USPW="testuser"
 WHEEL_FILE="https://www.dropbox.com/s/l1hm31eu5a8i644/flugel_test-0.2-py2-none-any.whl"
 

@@ -47,4 +47,3 @@ node['flugel_devpiserver']['virtualenv'] = '/opt/devpiserver'
 
 ## TODO list
 - Integrate devpi-server with postgres or mysql
-- Integrate devpi-web with Nginx proxy web

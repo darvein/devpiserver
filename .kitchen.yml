@@ -12,10 +12,12 @@ platforms:
     driver_config:
         network:
             - ["forwarded_port", {guest: 3141, host: 3141}]
+            - ["forwarded_port", {guest: 8080, host: 8080}]
 
 suites:
   - name: default
     run_list:
       - recipe[flugel_devpiserver::default]
       - recipe[flugel_devpiserver::supervisord]
+      - recipe[flugel_devpiserver::nginx]
     attributes:

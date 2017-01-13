@@ -32,5 +32,5 @@ end
 #end
 
 supervisor_service 'devpi_server' do
-    action :start
+    action :restart
 end
