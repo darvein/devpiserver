@@ -1,13 +1,13 @@
 #
-# Cookbook Name:: flugel_devpiserver
+# Cookbook Name:: devpiserver
 # Recipe:: default
 #
 
 include_recipe 'python'
 
-virt_path = node['flugel_devpiserver']['virtualenv']
-devpi_user = node['flugel_devpiserver']['devpi_user']
-devpi_group = node['flugel_devpiserver']['devpi_group']
+virt_path = node['devpiserver']['virtualenv']
+devpi_user = node['devpiserver']['devpi_user']
+devpi_group = node['devpiserver']['devpi_group']
 
 devpicmd = "#{virt_path}/bin/devpi-server"
 server_path = "/home/#{devpi_user}/.devpi/server"

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: flugel_devpiserver
+# Cookbook Name:: devpiserver
 # Recipe:: supervisor
 #
 

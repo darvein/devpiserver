@@ -1,16 +1,16 @@
 #
-# Cookbook Name:: flugel_devpiserver
+# Cookbook Name:: devpiserver
 # Recipe:: supervisor
 #
 
 include_recipe 'supervisor'
-include_recipe 'flugel_devpiserver'
+include_recipe 'devpiserver'
 
-virt_path = node['flugel_devpiserver']['virtualenv']
-devpi_port = node['flugel_devpiserver']['devpi_port']
-devpi_user = node['flugel_devpiserver']['devpi_user']
-devpi_group = node['flugel_devpiserver']['devpi_group']
-devpi_host = node['flugel_devpiserver']['devpi_host']
+virt_path = node['devpiserver']['virtualenv']
+devpi_port = node['devpiserver']['devpi_port']
+devpi_user = node['devpiserver']['devpi_user']
+devpi_group = node['devpiserver']['devpi_group']
+devpi_host = node['devpiserver']['devpi_host']
 
 devpicmd = "#{virt_path}/bin/devpi-server"
 server_path = "/home/#{devpi_user}/.devpi/server"

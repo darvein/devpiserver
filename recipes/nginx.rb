@@ -1,13 +1,13 @@
 #
-# Cookbook Name:: flugel_devpiserver
+# Cookbook Name:: devpiserver
 # Recipe:: default
 #
 
 include_recipe 'nginx'
 
-devpi_port = node['flugel_devpiserver']['devpi_port']
-devpi_user = node['flugel_devpiserver']['devpi_user']
-nginx_port = node['flugel_devpiserver']['nginx_port']
+devpi_port = node['devpiserver']['devpi_port']
+devpi_user = node['devpiserver']['devpi_user']
+nginx_port = node['devpiserver']['nginx_port']
 server_path = "/home/#{devpi_user}/.devpi/server"
 
 service 'nginx' do

@@ -1,6 +1,6 @@
 # # encoding: utf-8
 
-# Inspec test for recipe flugel_devpiserver::default
+# Inspec test for recipe devpiserver::default
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html

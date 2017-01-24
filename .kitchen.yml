@@ -17,7 +17,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[flugel_devpiserver::default]
-      - recipe[flugel_devpiserver::supervisord]
-      - recipe[flugel_devpiserver::nginx]
+      - recipe[devpiserver::default]
+      - recipe[devpiserver::supervisord]
+      - recipe[devpiserver::nginx]
     attributes:

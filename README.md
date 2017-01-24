@@ -10,8 +10,8 @@ This cookbook can be tested by following steps:
 
 ~~~~
 # Clone the repository
-$ https://github.com/darvein/flugel_devpiserver
-$ cd flugel_devpiserver
+$ https://github.com/darvein/devpiserver
+$ cd devpiserver
 ~~~~
 
 
@@ -36,13 +36,13 @@ http://[your computer IP address]:3141
 Following attributes can be overriden:
 
 ~~~~
-node['flugel_devpiserver']['devpi_user'] = 'devpi'
-node['flugel_devpiserver']['devpi_group'] = 'devpi'
+node['devpiserver']['devpi_user'] = 'devpi'
+node['devpiserver']['devpi_group'] = 'devpi'
 
-node['flugel_devpiserver']['devpi_host'] = '0.0.0.0'
-node['flugel_devpiserver']['devpi_port'] = 3141
+node['devpiserver']['devpi_host'] = '0.0.0.0'
+node['devpiserver']['devpi_port'] = 3141
 
-node['flugel_devpiserver']['virtualenv'] = '/opt/devpiserver'
+node['devpiserver']['virtualenv'] = '/opt/devpiserver'
 ~~~~
 
 ## TODO list

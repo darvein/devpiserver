@@ -1,4 +1,4 @@
-name 'flugel_devpiserver'
+name 'devpiserver'
 maintainer 'Dennis Ruiz'
 maintainer_email 'you@example.com'
 license 'all_rights'
